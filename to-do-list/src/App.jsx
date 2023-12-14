@@ -2,22 +2,28 @@ import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Sidebar from "./components/Sidebar.jsx";
-import Lists from "./components/Lists.jsx";
+
 import { Route, Router } from "react-router-dom";
-import { ReactDOM } from "react-dom";
+import HomePage from "./pages/HomePage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 function App() {
   return (
-    <div className="Navbar">
-      <Navbar />
-
-      <div className="pages">
-        <Router>
-          <Route path="/" element={<Lists />} />
-        </Router>
+    <div>
+      <div className="Navbar">
+        <Navbar />
       </div>
-      <Sidebar />
-      <Footer />
+      <div className="pages">
+        {/* <Lists /> */}
+        {/* <Router>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/itemdetails" element={<p>items</p>}></Route>
+          <Route path="/AboutUs" element={<AboutPage />}></Route>
+          <Route path="*" element={<h1>Error 404</h1>}></Route>
+        </Router>
+        <Sidebar />
+        <Footer /> */}
+      </div>
     </div>
   );
 }

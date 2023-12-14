@@ -126,3 +126,8 @@ table {
 .Navbar {
   color: white;
 }
+
+.navbarContainer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
