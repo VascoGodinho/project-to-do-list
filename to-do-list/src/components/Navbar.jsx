@@ -1,5 +1,4 @@
-
-import logo from '../assets/notebookLogo.png';
+import logo from "../assets/notebookLogo.png";
 
 function Navbar() {
   return (
@@ -10,8 +9,4 @@ function Navbar() {
   );
 }
 
-
-
-export default Navbar
-
-
+export default Navbar;
