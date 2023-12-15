@@ -11,16 +11,18 @@ function Lists() {
   };
 
   return (
-    <ul>
-      {taskLists.map((task, tasksIndex) => (
-        <ListItem
-          handleDelete={taskDelete}
-          task={task}
-          tasksIndex={tasksIndex}
-          key={tasksIndex}
-        />
-      ))}
-    </ul>
+    <div className="listItems">
+      <ul>
+        {taskLists.map((task, tasksIndex) => (
+          <ListItem
+            handleDelete={taskDelete}
+            task={task}
+            tasksIndex={tasksIndex}
+            key={tasksIndex}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }
 export default Lists;
