@@ -1,3 +1,3 @@
 function ItemDetails() {
-  <div></div>;
+  return <div></div>;
 }
