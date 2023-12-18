@@ -1,28 +1,27 @@
-import Tasks from "../assets/tasks.json";
-import { useState } from "react";
 import ListItem from "./ListItem";
 
-function Lists() {
-  const [taskLists, setTaskLists] = useState(Tasks);
-  const taskDelete = (tasksIndex) => {
+function Lists({ taskLists, setTaskLists }) {
+  function taskDelete(tasksIndex) {
+    console.log("TD . " + tasksIndex);
     const updatedTaskLists = [...taskLists];
     updatedTaskLists.splice(tasksIndex, 1);
     setTaskLists(updatedTaskLists);
-  };
+  }
 
   return (
     <div className="listItems">
       <ul>
         {taskLists.map((task, tasksIndex) => (
           <ListItem
-            handleDelete={taskDelete}
+            taskDelete={taskDelete}
             task={task}
             tasksIndex={tasksIndex}
-            key={tasksIndex}
+            key={task.id}
           />
         ))}
       </ul>
     </div>
   );
 }
+
 export default Lists;
