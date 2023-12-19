@@ -1,17 +1,11 @@
 import Lists from "../components/Lists.jsx";
+import { useState } from "react";
 import "../styling/homePage.css";
+import { v4 as uuidv4 } from "uuid";
 
-function HomePage({ taskLists, setTaskLists }) {
-  /*   const handleSubmit = (event) =>
-  event.preventDefault();
-} */
+function HomePage({ taskLists, setTaskLists, addTask }) {
   return (
     <div>
-      <h3>Tasks</h3>
-      <form>
-        <input type="text" placeholder="Enter task" />
-        <button type="submit">Add</button>
-      </form>
       <Lists taskLists={taskLists} setTaskLists={setTaskLists} />
     </div>
   );

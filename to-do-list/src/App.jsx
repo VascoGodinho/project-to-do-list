@@ -19,7 +19,6 @@ function App() {
         <Navbar />
       </div>
       <div className="listItems">
-        {/* <Lists /> */}
         <Routes>
           <Route
             path="/"

@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import Lists from "./Lists";
 
-function ListItem({ task, tasksIndex, taskDelete }) {
+function ListItem({ task, tasksIndex, taskDelete, taskSwitchComplete }) {
   return (
     <li>
       <p>
@@ -21,6 +21,12 @@ function ListItem({ task, tasksIndex, taskDelete }) {
       <button onClick={() => taskDelete(tasksIndex)} type="button">
         Delete
       </button>
+      <input
+        type="checkbox"
+        checked={task.completed}
+        onClick={() => taskSwitchComplete(tasksIndex)}
+        text="complete"
+      />
     </li>
   );
 }
