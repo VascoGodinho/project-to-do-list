@@ -9,15 +9,14 @@ function AboutPage() {
         <Link to="https://github.com/VascoGodinho">Github Page</Link>
       </p>
       <p>
-        <Link to="">LinkedIn</Link>
+        <Link to="https://www.linkedin.com/in/vasco-godinho-2719ba168/">
+          LinkedIn
+        </Link>
       </p>
 
       <h4>Nadjim Karimi</h4>
       <p>
-        <Link to="">Github Page</Link>
-      </p>
-      <p>
-        <Link to="">LinkedIn</Link>
+        <Link to="https://github.com/Nadjim12">Github Page</Link>
       </p>
     </div>
   );

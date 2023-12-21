@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 function TaskForm({ addTask }) {
   const [taskText, setTaskText] = useState("");
 
-  const handleTaskSubmit = (e) => {
-    e.preventDefault();
+  const handleTaskSubmit = (event) => {
+    event.preventDefault();
     if (taskText.trim() === "") {
       return;
     }
